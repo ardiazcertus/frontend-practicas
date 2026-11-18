@@ -1,0 +1,36 @@
+/* ====================================================
+   ESTILOS PERSONALIZADOS (aplicados DESPUÉS de Bootstrap)
+   Los selectores propios no necesitan modificar Bootstrap.
+   ==================================================== */
+:root { --azul-oscuro:#101f3d; --azul:#244b94; --celeste:#38bdf8; --fondo-suave:#eff5ff; }
+* { box-sizing:border-box; }
+body { font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:#fff; color:#192c49; }
+.site-header { background:var(--azul-oscuro); box-shadow:0 4px 12px #101f3d22; }
+.site-footer { background:var(--azul-oscuro); }
+.hero { background:linear-gradient(125deg,#122650,#244b94); color:#fff; }
+.hero .lead { color:#e0ebff; }
+.hero-illustration { border:1px solid #78a8dd66; border-radius:18px; background:#081426; box-shadow:0 20px 60px #08142680; overflow:hidden; }
+.window-dots { display:flex; gap:8px; padding:15px; background:#152943; }
+.window-dots span { width:11px; height:11px; border-radius:50%; background:var(--celeste); }
+.window-dots span:first-child { background:#ff7979; }
+.window-dots span:nth-child(2) { background:#ffd166; }
+.hero-illustration pre { color:#9ce6b8; font-size:clamp(.8rem,1.7vw,1rem); padding:25px; white-space:pre-wrap; }
+.page-heading { background:linear-gradient(120deg,#e9f3ff,#fafcff); }
+.section-soft { background:var(--fondo-suave); }
+.feature-icon { display:inline-flex; align-items:center; justify-content:center; min-width:58px; height:58px; padding:0 10px; border-radius:12px; background:#dcecff; color:#173e91; font-weight:800; }
+.feature-card, .servicio .card { transition:transform .25s ease, box-shadow .25s ease; }
+.feature-card:hover, .servicio .card:hover { transform:translateY(-5px); box-shadow:0 14px 30px #14274b24!important; }
+.avatar { display:flex;align-items:center;justify-content:center;border-radius:50%;width:80px;height:80px;background:#d6e8ff;color:#244b94;font-weight:800;font-size:1.4rem; }
+.project-visual { display:flex;align-items:center;justify-content:center;min-height:155px;background:linear-gradient(135deg,#17417e,#4e9be9);color:#fff;font-size:1.2rem;font-weight:700; }
+.project-visual-alt { background:linear-gradient(135deg,#0a6769,#30a7a5); }
+.project-visual-third { background:linear-gradient(135deg,#6b4ba6,#ac83e5); }
+.btn:focus-visible, a:focus-visible { outline:3px solid #ffc857; outline-offset:3px; }
+/* Carousel controls are visible over the light background */
+.carousel-control-next-icon,.carousel-control-prev-icon { filter:invert(1) grayscale(1); }
+/* Modo oscuro: se añade a body mediante JavaScript + localStorage */
+body.modo-oscuro { background:#121e31; color:#ecf4ff; }
+body.modo-oscuro .page-heading { background:#1d2d49; }
+body.modo-oscuro .section-soft { background:#1b2d49; }
+body.modo-oscuro .card, body.modo-oscuro .modal-content { background:#20324f; color:#f1f7ff; border-color:#456084; }
+body.modo-oscuro .text-secondary-emphasis { color:#c9d8ee!important; }
+body.modo-oscuro .form-control,body.modo-oscuro .form-select { background:#f8fbff; color:#182a46; }

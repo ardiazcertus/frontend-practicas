@@ -1,0 +1,13 @@
+/* Enfoque mobile-first: estilos especiales a partir de breakpoints */
+@media (max-width: 575.98px) {
+  .hero { padding-top:1rem; padding-bottom:1rem; }
+  .hero-illustration pre { padding:15px; }
+  .page-heading h1 { font-size:2rem; }
+  .carousel-inner { padding-left:35px!important; padding-right:35px!important; }
+}
+@media (min-width: 992px) {
+  .hero h1 { max-width:650px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  *,*::before,*::after { scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important; }
+}

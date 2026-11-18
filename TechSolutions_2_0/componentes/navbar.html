@@ -1,0 +1,21 @@
+<!-- COMPONENTE COMPARTIDO: menú presente en las cinco páginas. -->
+<header class="sticky-top site-header">
+  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="{{BASE}}index.html">Tech<span class="text-info">Solutions</span> <span class="fw-normal small">Perú</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" data-page="inicio" href="{{BASE}}index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="nosotros" href="{{BASE}}paginas/nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="servicios" href="{{BASE}}paginas/servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="portafolio" href="{{BASE}}paginas/portafolio.html">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="contacto" href="{{BASE}}paginas/contacto.html">Contacto</a></li>
+        </ul>
+        <button class="btn btn-outline-info btn-sm ms-lg-3 mt-3 mt-lg-0" id="btnTema" type="button" aria-pressed="false">Modo oscuro</button>
+      </div>
+    </div>
+  </nav>
+</header>
